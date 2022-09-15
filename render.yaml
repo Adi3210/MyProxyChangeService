@@ -1,0 +1,8 @@
+services:
+ - type: web
+   name: ProxyChangeService
+   env: go
+   repo: https://github.com/Adi3210/MyProxyChangeService.git
+   buildCommand: go build -tags netgo -ldflags '-s -w' -o app
+   startCommand: ./app
+  
